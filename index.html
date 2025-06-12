@@ -1,0 +1,62 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dia dos Namorados 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Etapa 1: Login -->
+    <div id="login-screen" class="screen active">
+      <h1>Bem-vinda, meu amor ❤️</h1>
+      <input type="text" id="loginName" placeholder="Seu nome">
+      <input type="password" id="loginPassword" placeholder="Data do nosso namoro">
+      <button onclick="login()">Entrar</button>
+    </div>
+
+    <!-- Etapa 2: Nossos Momentos -->
+    <div id="momentos-screen" class="screen">
+      <h2>Nossos Momentos Juntos 📷</h2>
+      <div class="gallery">
+        <img src="adda3f0c-3e73-41f5-9c06-7fbe5535d0d8.jpg" alt="Foto 1">
+        <img src="e4f3997b-81a2-4a2e-8dec-78ed242ba0f2.jpg" alt="Foto 2">
+        <img src="c50d3eb8-75a3-4767-8d8f-6b87403bb2d8.jpg" alt="Foto 3">
+        <img src="236f613d-0dd1-4eac-b6bb-4146d4433940.jpg" alt="Foto 4">
+        <img src="2b4912ec-4ae6-4001-aeb1-47ad9e4f2f6d.jpg" alt="Foto 5">
+      </div>
+      <button onclick="goTo('cartinha-screen')">Cartinha de Amor 💌</button>
+    </div>
+
+    <!-- Etapa 3: Cartinha de Amor -->
+    <div id="cartinha-screen" class="screen">
+      <h2>Minha Cartinha 💖</h2>
+      <p>
+        Meu amor, cada instante contigo é único. Obrigado por me fazer tão feliz, por seu carinho, seu amor, seu cuidado. Que a nossa história continue cheia de sorrisos e amor verdadeiro. Te amo infinitamente!
+      </p>
+      <button onclick="goTo('flores-screen')">Surpresa com Flores 🌹</button>
+    </div>
+
+    <!-- Etapa 4: Buquê com Cartinha -->
+    <div id="flores-screen" class="screen">
+      <h2>Um Buquê para Você 🌸</h2>
+      <img src="download.png" alt="Buquê de flores" class="flores">
+      <p>
+        Essas flores são para te lembrar do quanto você é especial. Que o nosso amor continue florescendo como essas rosas lindas. Te amo pra sempre! 💕
+      </p>
+      <button onclick="goTo('final-screen')">Mensagem Final 💝</button>
+    </div>
+
+    <!-- Etapa 5: Mensagem Final -->
+    <div id="final-screen" class="screen">
+      <h2>Feliz Dia dos Namorados! 🎉</h2>
+      <p>Gaby Barbirato, você é o amor da minha vida! Obrigado por existir e estar comigo. Que nosso amor dure pra sempre!</p>
+      <h3>EU TE AMO ❤️</h3>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -15,13 +15,34 @@ function login() {
   }
 }
 
-// Função para trocar de tela
+
+const historicoTelas = [];
+
 function goTo(telaId) {
   const telas = document.querySelectorAll(".screen");
-  telas.forEach(tela => tela.classList.remove("active"));
+  const telaAtual = document.querySelector(".screen.active");
+
+  if (telaAtual) {
+    telaAtual.classList.remove("active");
+    historicoTelas.push(telaAtual.id);
+  }
 
   const proximaTela = document.getElementById(telaId);
   if (proximaTela) {
     proximaTela.classList.add("active");
+  }
+}
+
+function voltar() {
+  const telas = document.querySelectorAll(".screen");
+  const telaAtual = document.querySelector(".screen.active");
+
+  if (telaAtual) {
+    telaAtual.classList.remove("active");
+  }
+
+  const telaAnterior = historicoTelas.pop();
+  if (telaAnterior) {
+    document.getElementById(telaAnterior).classList.add("active");
   }
 }

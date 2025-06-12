@@ -1,12 +1,14 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dia dos Namorados 💖</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div id="app">
     <!-- Etapa 1: Login -->
@@ -34,8 +36,10 @@
     <div id="cartinha-screen" class="screen">
       <h2>Minha Cartinha 💖</h2>
       <p>
-        Meu amor, cada instante contigo é único. Obrigado por me fazer tão feliz, por seu carinho, seu amor, seu cuidado. Que a nossa história continue cheia de sorrisos e amor verdadeiro. Te amo infinitamente!
+        Meu amor, cada instante contigo é único. Obrigado por me fazer tão feliz, por seu carinho, seu amor, seu
+        cuidado. Que a nossa história continue cheia de sorrisos e amor verdadeiro. Te amo infinitamente!
       </p>
+      <button onclick="voltar()">Voltar</button>
       <button onclick="goTo('flores-screen')">Surpresa com Flores 🌹</button>
     </div>
 
@@ -44,19 +48,24 @@
       <h2>Um Buquê para Você 🌸</h2>
       <img src="download.png" alt="Buquê de flores" class="flores">
       <p>
-        Essas flores são para te lembrar do quanto você é especial. Que o nosso amor continue florescendo como essas rosas lindas. Te amo pra sempre! 💕
+        Essas flores são para te lembrar do quanto você é especial. Que o nosso amor continue florescendo como essas
+        rosas lindas. Te amo pra sempre! 💕
       </p>
+      <button onclick="voltar()">Voltar</button>
       <button onclick="goTo('final-screen')">Mensagem Final 💝</button>
     </div>
 
     <!-- Etapa 5: Mensagem Final -->
     <div id="final-screen" class="screen">
       <h2>Feliz Dia dos Namorados! 🎉</h2>
-      <p>Gaby Barbirato, você é o amor da minha vida! Obrigado por existir e estar comigo. Que nosso amor dure pra sempre!</p>
+      <p>Gaby Barbirato, você é o amor da minha vida! Obrigado por existir e estar comigo. Que nosso amor dure pra
+        sempre!</p>
       <h3>EU TE AMO ❤️</h3>
+      <button onclick="voltar()">Voltar</button>
     </div>
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
